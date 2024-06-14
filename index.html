@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <div class="caixa">
+        <div class="galeria">
+            <img src="/foto_1.jfif" alt=""  id="imagemPrincipal">
+            <div class="miniaturas">
+                <img src="/foto_1.jfif" onclick="mudarImagemParaMiniatura1()" alt="" id="miniatura1" class="miniatura">
+                <img src="/foto_2.webp" onclick="mudarImagemParaMiniatura2()" id="miniatura2" class="miniatura">
+                <img src="/foto_3.webp" onclick="mudarImagemParaMiniatura3()" id="miniatura3" class="miniatura">
+            </div>
+        </div>
+    </div>
+    <script>
+         const imagemPrincipal = document.getElementById("imagemPrincipal")
+
+         function mudarImagemParaMiniatura1() {
+            const foto_1 = document.getElementById("miniatura1");
+            imagemPrincipal.src = foto_1.src;
+         }
+
+         function mudarImagemParaMiniatura2() {
+            const foto_2 = document.getElementById("miniatura2");
+            imagemPrincipal.src = foto_2.src;
+         }
+
+         function mudarImagemParaMiniatura3() {
+            const foto_3 = document.getElementById("miniatura3");
+            imagemPrincipal.src = foto_3.src;
+         }
+    </script>
+</body>
+
+</html>

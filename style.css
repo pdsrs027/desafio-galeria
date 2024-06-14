@@ -1,0 +1,36 @@
+.caixa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 100px auto;
+}
+
+.galeria{
+    text-align: center;
+}
+
+#imagemPrincipal{
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.miniatras{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.miniatura{
+    width: 100px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.img{
+    width: 755px;
+    height: 755px;
+    border-radius: 37,5px;
+}
